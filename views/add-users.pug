@@ -1,0 +1,16 @@
+extends layouts/users-layouts.pug
+block style 
+  link(rel="stylesheet", href="../css/addusers.css")
+block content
+     main 
+      h1 Add Users
+      form(action="users" , method="POST")
+       div.inp
+        label(for="User name") User name 
+        br
+        input(type="text" , name="username")
+       .inp 
+        label(for="User age") User age 
+        br
+        input(type="text" , name="userage")
+       button(type="submit") Send   

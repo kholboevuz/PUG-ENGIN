@@ -1,0 +1,14 @@
+extends layouts/main-layouts.pug
+block  style 
+ link(rel="stylesheet", href="css/main.css")
+block content
+  if users.length > 0
+    each user in users
+      div.card
+        img(src="https://www.w3schools.com/howto/img_avatar.png", alt="Avatar", style="width:100%")
+        div.container
+         h4 
+          b #{user.username}
+         p Age: #{user     .userage}
+    else 
+     p Userlar mavjud emas

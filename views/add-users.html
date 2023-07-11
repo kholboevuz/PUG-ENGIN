@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Users</title>
+    <link rel="stylesheet" href="../css/addusers.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul><a href="/">Asosiy sahifa</a></ul>
+            <ul><a href="/users/add-users">Add Users</a></ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Add users</h1>
+        <form action="users" method="POST">
+            <div class="inp">
+            <label for="User name">User name</label>
+            <br>
+            <input type="text" name="username" >
+        </div>
+        <div class="inp">
+
+        <label for="User age">User age</label>
+        <br>    
+        <input type="number" name="userage" >
+        </div>
+            <button type="submit">Send</button>
+            </form>
+    </main>
+</body>
+</html>
